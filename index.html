@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="de" class="edlkpczj idc0_350">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+        <meta name="theme-color" content="#018F2C" />
+
+        <title>Team acme</title>
+
+        <link rel="stylesheet" href="184.e1d8f69e.css" />
+
+        <style type="text/css">
+            .indiana-scroll-container {
+                overflow: auto;
+            }
+            .indiana-scroll-container--dragging {
+                scroll-behavior: auto !important;
+            }
+            .indiana-scroll-container--dragging > * {
+                pointer-events: none;
+                cursor: -webkit-grab;
+                cursor: grab;
+            }
+            .indiana-scroll-container--hide-scrollbars {
+                overflow: hidden;
+                overflow: -moz-scrollbars-none;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .indiana-scroll-container--hide-scrollbars::-webkit-scrollbar {
+                display: none !important;
+                height: 0 !important;
+                width: 0 !important;
+                background: transparent !important;
+                -webkit-appearance: none !important;
+            }
+            .indiana-scroll-container--native-scroll {
+                overflow: auto;
+            }
+
+            .indiana-dragging {
+                cursor: -webkit-grab;
+                cursor: grab;
+            }
+        </style>
+        <style id="react-tooltip-core-styles" type="text/css">
+            :root {
+                --rt-color-white: #fff;
+                --rt-color-dark: #222;
+                --rt-color-success: #8dc572;
+                --rt-color-error: #be6464;
+                --rt-color-warning: #f0ad4e;
+                --rt-color-info: #337ab7;
+                --rt-opacity: 0.9;
+                --rt-transition-show-delay: 0.15s;
+                --rt-transition-closing-delay: 0.15s;
+            }
+            .core-styles-module_tooltip__3vRRp {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                opacity: 0;
+                will-change: opacity;
+            }
+            .core-styles-module_fixed__pcSol {
+                position: fixed;
+            }
+            .core-styles-module_arrow__cvMwQ {
+                position: absolute;
+                background: inherit;
+            }
+            .core-styles-module_noArrow__xock6 {
+                display: none;
+            }
+            .core-styles-module_clickable__ZuTTB {
+                pointer-events: auto;
+            }
+            .core-styles-module_show__Nt9eE {
+                opacity: var(--rt-opacity);
+                transition: opacity var(--rt-transition-show-delay) ease-out;
+            }
+            .core-styles-module_closing__sGnxF {
+                opacity: 0;
+                transition: opacity var(--rt-transition-closing-delay) ease-in;
+            }
+        </style>
+        <style id="react-tooltip-base-styles" type="text/css">
+            .styles-module_tooltip__mnnfp {
+                padding: 8px 16px;
+                border-radius: 3px;
+                font-size: 90%;
+                width: max-content;
+            }
+            .styles-module_arrow__K0L3T {
+                width: 8px;
+                height: 8px;
+            }
+            [class*="react-tooltip__place-top"] > .styles-module_arrow__K0L3T {
+                transform: rotate(45deg);
+            }
+            [class*="react-tooltip__place-right"] > .styles-module_arrow__K0L3T {
+                transform: rotate(135deg);
+            }
+            [class*="react-tooltip__place-bottom"] > .styles-module_arrow__K0L3T {
+                transform: rotate(225deg);
+            }
+            [class*="react-tooltip__place-left"] > .styles-module_arrow__K0L3T {
+                transform: rotate(315deg);
+            }
+            .styles-module_dark__xNqje {
+                background: var(--rt-color-dark);
+                color: var(--rt-color-white);
+            }
+            .styles-module_light__Z6W-X {
+                background-color: var(--rt-color-white);
+                color: var(--rt-color-dark);
+            }
+            .styles-module_success__A2AKt {
+                background-color: var(--rt-color-success);
+                color: var(--rt-color-white);
+            }
+            .styles-module_warning__SCK0X {
+                background-color: var(--rt-color-warning);
+                color: var(--rt-color-white);
+            }
+            .styles-module_error__JvumD {
+                background-color: var(--rt-color-error);
+                color: var(--rt-color-white);
+            }
+            .styles-module_info__BWdHW {
+                background-color: var(--rt-color-info);
+                color: var(--rt-color-white);
+            }
+        </style>
+    </head>
+
+    <body
+        class="prose prose-sm lg:prose-base max-w-[1920px] mx-auto min-h-screen overflow-x-hidden border-t-2 md:border-t-4 border-acmeLiga-primary-darkGreen dark:border-acmeLiga-primary-darkGrey"
+        style="--r-font-size: 1rem; --r-lineHeight: 1.6875rem;"
+    >
+        <script>
+            0;
+        </script>
+        <div id="pwa" class="min-h-screen flex flex-col lg:block">
+            <div class="sticky top-0 z-50">
+                <header class="z-50 col-span-full bg-white py-2 lg:py-11">
+                    <div class="container grid grid-cols-[1fr_auto_auto] items-center justify-between gap-x-2.5 gap-y-3 lg:grid-cols-[minmax(0,_376px)_1fr_auto] lg:gap-x-10 2xl:gap-x-[100px]">
+                        <span class="no-focus-ring__input flex" data-rac="" tabindex="0" role="link">
+                            <a data-no-hover="true" href="/app/home"><img src="Sample-Image.png" alt="Berliner acme Liga" class="w-40 lg:w-auto" /> </a>
+                        </span>
+                        <div class="flex items-center justify-center gap-3 lg:order-2">
+                            <form method="get" action="/app/search">
+                                <button
+                                    data-no-hover="true"
+                                    type="button"
+                                    class="btn border-0 focus:outline-none focus:border-0 flex h-[52px] w-[52px] items-center justify-center rounded-full border-0 bg-acmeLiga-primary-lightGrey p-0 text-acmeLiga-primary-darkGreen lg:invisible lg:hidden"
+                                    data-rac=""
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+                                        <path
+                                            fill="currentColor"
+                                            d="M25.833 23.333h-1.316l-.467-.45a10.79 10.79 0 0 0 2.617-7.05C26.667 9.85 21.817 5 15.833 5 9.85 5 5 9.85 5 15.833s4.85 10.834 10.833 10.834c2.684 0 5.15-.984 7.05-2.617l.45.467v1.316l8.334 8.317 2.483-2.483zm-10 0a7.49 7.49 0 0 1-7.5-7.5c0-4.15 3.35-7.5 7.5-7.5s7.5 3.35 7.5 7.5-3.35 7.5-7.5 7.5"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <div
+                                    class="form-max-width--search absolute -bottom-[111px] right-0 z-30 items-center gap-4 shadow-acmeLiga md:gap-10 lg:relative lg:bottom-[unset] lg:right-[unset] lg:flex lg:max-w-full lg:gap-20 lg:shadow-none"
+                                >
+                                    <div class="invisible hidden lg:visible lg:flex form-max-width--search">
+                                        <div class="form-max-width--search relative" data-rac="" data-empty="true">
+                                            <label class="sr-only" id="react-aria8134122783-:rj:" for="react-aria8134122783-:ri:">Suche</label>
+                                            <input
+                                                aria-label="Suche"
+                                                type="search"
+                                                placeholder="Suchbegriff eingeben"
+                                                id="react-aria8134122783-:ri:"
+                                                aria-labelledby="react-aria8134122783-:ri: react-aria8134122783-:rj:"
+                                                class="focus-classes pb-4 dark:border-acmeLiga-highContrast-black-bg"
+                                                data-rac=""
+                                                value=""
+                                                title=""
+                                            />
+                                            <button data-no-hover="true" type="button" tabindex="-1" aria-label="Suche zurücksetzen" class="btn btn-primary-icon" data-rac="">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_642_930)">
+                                                        <path
+                                                            d="M25.8333 23.3333H24.5167L24.05 22.8833C25.6833 20.9833 26.6667 18.5167 26.6667 15.8333C26.6667 9.85 21.8167 5 15.8333 5C9.85 5 5 9.85 5 15.8333C5 21.8167 9.85 26.6667 15.8333 26.6667C18.5167 26.6667 20.9833 25.6833 22.8833 24.05L23.3333 24.5167V25.8333L31.6667 34.15L34.15 31.6667L25.8333 23.3333ZM15.8333 23.3333C11.6833 23.3333 8.33333 19.9833 8.33333 15.8333C8.33333 11.6833 11.6833 8.33333 15.8333 8.33333C19.9833 8.33333 23.3333 11.6833 23.3333 15.8333C23.3333 19.9833 19.9833 23.3333 15.8333 23.3333Z"
+                                                            fill="currentColor"
+                                                        ></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_642_930"><rect width="40" height="40" fill="white"></rect></clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap gap-5 bg-white px-4 py-2.5 sm:gap-14 lg:hidden lg:flex-col lg:gap-0 lg:p-0 xl:flex md:form-max-width--search lg:w-auto lg:max-w-full lg:bg-transparent hidden">
+                                        <span class="no-focus-ring__input" data-rac="" tabindex="0" role="link">
+                                            <a data-no-hover="true" href="/app/search/groups">
+                                                <span class="flex items-center gap-2.5 no-underline">
+                                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.109863 12.9199L1.28986 14.0999L7.88986 7.4999L1.28986 0.899902L0.109863 2.0799L5.52986 7.4999L0.109863 12.9199Z" fill="#018F2C"></path>
+                                                    </svg>
+                                                    <span class="whitespace-nowrap">zur Gruppensuche</span>
+                                                </span>
+                                            </a>
+                                        </span>
+                                        <span class="no-focus-ring__input" data-rac="" tabindex="0" role="link">
+                                            <a data-no-hover="true" href="/app/search/profile">
+                                                <span class="flex items-center gap-2.5 no-underline">
+                                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.109863 12.9199L1.28986 14.0999L7.88986 7.4999L1.28986 0.899902L0.109863 2.0799L5.52986 7.4999L0.109863 12.9199Z" fill="#018F2C"></path>
+                                                    </svg>
+                                                    <span>zur Profilsuche</span>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="flex items-center justify-center lg:hidden">
+                                <div class="flex items-center gap-5 text-acmeLiga-primary-darkGrey no-focus-ring__input">
+                                    <div class="relative flex items-center justify-center overflow-hidden rounded-full bg-acmeLiga-primary-lightGrey h-12 w-12 cursor-pointer hover:underline">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80" class="h-full w-full object-contain">
+                                                <g clip-path="url(#fallbackProfilePicture_svg__a)">
+                                                    <path fill="url(#fallbackProfilePicture_svg__b)" d="M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40" opacity="0.5"></path>
+                                                    <path fill="#F5F5F5" d="M40.078 78.9c21.626 0 39.157-17.53 39.157-39.156S61.704.588 40.078.588.922 18.118.922 39.744s17.53 39.157 39.156 39.157"></path>
+                                                    <path fill="#018F2C" d="M40.115 79.056a38.97 38.97 0 0 0 21.523-6.441c-1.443-7.886-6.934-8.335-6.934-8.335H24.423s-5.182.425-6.8 7.679a38.98 38.98 0 0 0 22.492 7.097"></path>
+                                                    <path fill="#333" d="M39.699 57.819c10.438 0 18.9-8.462 18.9-18.9s-8.462-18.9-18.9-18.9-18.9 8.462-18.9 18.9 8.462 18.9 18.9 18.9"></path>
+                                                    <path fill="#333" d="M33.599 54.661h12.11v9.689a6.055 6.055 0 0 1-10.335 4.281 6.06 6.06 0 0 1-1.773-4.281V54.66z" opacity="0.1"></path>
+                                                    <path fill="#FDB797" d="M33.983 54.212H45.33a.384.384 0 0 1 .384.384V63.9a6.055 6.055 0 1 1-12.112.001v-9.305a.384.384 0 0 1 .381-.384"></path>
+                                                    <path fill="#333" d="M33.621 59.235a17.43 17.43 0 0 0 12.11.033v-1.49h-12.11z" opacity="0.1"></path>
+                                                    <path fill="#FDB797" d="M39.699 60.045c9.587 0 17.358-7.772 17.358-17.359 0-9.586-7.771-17.358-17.358-17.358S22.341 33.1 22.341 42.686s7.771 17.359 17.358 17.359"></path>
+                                                    <path fill="#333" d="M27.334 26.897s7.316 14.85 27.952 6.226L50.48 25.59l-8.517-3.057z" opacity="0.1"></path>
+                                                    <path fill="#333" d="M27.334 26.68s7.316 14.849 27.952 6.223L50.48 25.37l-8.517-3.057z"></path>
+                                                    <path
+                                                        fill="#FDB797"
+                                                        d="M22.334 45.699c.892 0 1.614-1.356 1.614-3.029s-.723-3.028-1.614-3.028-1.615 1.356-1.615 3.028c0 1.673.723 3.029 1.615 3.029M57.054 45.699c.892 0 1.615-1.356 1.615-3.029s-.723-3.028-1.615-3.028-1.614 1.356-1.614 3.028c0 1.673.723 3.029 1.614 3.029"
+                                                    ></path>
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="fallbackProfilePicture_svg__b" x1="40" x2="40" y1="80" y2="0" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="gray" stop-opacity="0.25"></stop>
+                                                        <stop offset="0.54" stop-color="gray" stop-opacity="0.12"></stop>
+                                                        <stop offset="1" stop-color="gray" stop-opacity="0.1"></stop>
+                                                    </linearGradient>
+                                                    <clipPath id="fallbackProfilePicture_svg__a"><path fill="#fff" d="M0 0h80v80H0z"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-no-hover="true" type="button" class="btn btn-primary hidden lg:order-3 lg:flex" data-rac=""><span>Abmelden</span></button>
+                    </div>
+                </header>
+            </div>
+            <div class="container grid flex-grow grid-cols-1 lg:grid-cols-[343px_minmax(0,_1377px)]">
+                <aside
+                    class="sticky bottom-0 z-[10000] order-2 -mx-4 mt-auto flex flex-col md:-mx-8 lg:bottom-[unset] lg:top-[154px] lg:z-40 lg:order-none lg:mx-0 lg:mt-0 lg:h-[calc(100vh-154px)] lg:overflow-y-auto lg:border-r-2 lg:border-acmeLiga-primary-lightGrey lg:pr-7"
+                >
+                    <nav class="pwa-nav not-prose">
+                        <ul>
+                            <li class="ord-1 lg:order-none">
+                                <a aria-label="Meine Startseite" data-no-hover="true" aria-current="page" class="focus:border-0 focus:outline-none active" href="/app/home">
+                                    <div class="nav-content">
+                                        <div class="icon w-9 pl-[4px]" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" fill="none" title="Meine Startseite">
+                                                <path fill="#333" d="m14 3.766 7 6.3V21h-2.8v-8.4H9.8V21H7V10.066zM14 0 0 12.6h4.2v11.2h8.4v-8.4h2.8v8.4h8.4V12.6H28z"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="invisible hidden lg:visible lg:block">Meine Startseite</span><span class="lg:invisible lg:hidden">Start</span>
+                                    </div>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="ord-2 lg:order-none">
+                                <a aria-label="Gruppen" data-no-hover="true" class="focus:border-0 focus:outline-none" href="/app/groups">
+                                    <div class="nav-content">
+                                        <div class="icon w-9 pl-[4px]" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" fill="none" title="Gruppen">
+                                                <path
+                                                    fill="#333"
+                                                    d="M12 15c-4.011 0-12 2.006-12 6v3h24v-3c0-3.994-7.989-6-12-6m-7.989 5.571c1.44-.994 4.92-2.142 7.989-2.142s6.549 1.148 7.989 2.142zM12 12c3.309 0 6-2.691 6-6s-2.691-6-6-6-6 2.691-6 6 2.691 6 6 6m0-8.571A2.57 2.57 0 0 1 14.571 6 2.57 2.57 0 0 1 12 8.571 2.57 2.57 0 0 1 9.429 6 2.57 2.57 0 0 1 12 3.429m12.069 11.674c1.988 1.44 3.36 3.36 3.36 5.897v3h6.857v-3c0-3.463-6-5.434-10.217-5.897M22.286 12c3.308 0 6-2.691 6-6s-2.692-6-6-6c-.926 0-1.783.223-2.572.6A9.33 9.33 0 0 1 21.43 6a9.33 9.33 0 0 1-1.715 5.4c.789.377 1.646.6 2.572.6"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                        <span class="invisible hidden lg:visible lg:block">Gruppen</span><span class="lg:invisible lg:hidden">Gruppen</span>
+                                    </div>
+                                    <span>
+                                        <div
+                                            class="flex items-center justify-center self-center rounded-full text-white text-sm size-6 lg:!size-7 bg-acmeLiga-secondary-turquoise dark:bg-acmeLiga-highContrast-darkGrey-bg dark:text-acmeLiga-highContrast-darkGrey-text lg:mr-9 absolute right-3.5 top-2.5 !size-4 md:flex lg:relative lg:right-[unset] lg:top-[unset]"
+                                        >
+                                            1
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="ord-3 lg:order-none">
+                                <a aria-label="Chats" data-no-hover="true" class="focus:border-0 focus:outline-none" href="/app/messages">
+                                    <div class="nav-content">
+                                        <div class="icon w-9 pl-[4px]" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" title="Chats">
+                                                <path
+                                                    fill="#333"
+                                                    d="M2.4 2.4h19.2v14.4H3.804L2.4 18.204zm0-2.4A2.397 2.397 0 0 0 .012 2.4L0 24l4.8-4.8h16.8c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zm2.4 12h9.6v2.4H4.8zm0-3.6h14.4v2.4H4.8zm0-3.6h14.4v2.4H4.8z"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                        <span class="invisible hidden lg:visible lg:block">Chats</span><span class="lg:invisible lg:hidden">Chats</span>
+                                    </div>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="ord-4 lg:order-none">
+                                <a aria-label="Kontakte" data-no-hover="true" class="focus:border-0 focus:outline-none" href="/app/contact">
+                                    <div class="nav-content">
+                                        <div class="icon w-9 pl-[4px]" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="24" fill="none" title="Kontakte">
+                                                <path
+                                                    fill="#333"
+                                                    d="M18 6c0-3.315-2.685-6-6-6S6 2.685 6 6s2.685 6 6 6 6-2.685 6-6m-3 0c0 1.65-1.35 3-3 3S9 7.65 9 6s1.35-3 3-3 3 1.35 3 3M0 21v3h24v-3c0-3.99-7.995-6-12-6S0 17.01 0 21m3 0c.3-1.065 4.95-3 9-3 4.035 0 8.67 1.92 9 3zm25.5-4.5V12H33V9h-4.5V4.5h-3V9H21v3h4.5v4.5z"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                        <span class="invisible hidden lg:visible lg:block">Kontakte</span><span class="lg:invisible lg:hidden">Kontakte</span>
+                                    </div>
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="z-50 order-5 lg:invisible lg:order-none lg:hidden">
+                                <a class="border-0 p-0" href="/app/more">
+                                    <div class="nav-content">
+                                        <div class="icon pointer-events-none" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="7" fill="none" title="Mehr">
+                                                <circle cx="3.5" cy="3.5" r="3.5" fill="#333"></circle>
+                                                <circle cx="14.5" cy="3.5" r="3.5" fill="#333"></circle>
+                                                <circle cx="25.5" cy="3.5" r="3.5" fill="#333"></circle>
+                                            </svg>
+                                        </div>
+                                        <span class="lg:invisible lg:hidden">Mehr</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <main class="order-1 flex flex-1 flex-col lg:order-none lg:pl-8 lg:pr-0 xl:pl-[72px]">
+                    <div
+                        class="-mx-4 mb-6 bg-acmeLiga-primary-pastelGreen px-4 py-6 dark:bg-acmeLiga-primary-lightGrey md:-mx-8 md:px-8 lg:-ml-8 lg:mb-10 lg:pb-10 lg:pl-8 lg:pt-14 xl:lg:-mr-[100px] xl:-ml-[72px] xl:pl-[72px] xl:pr-[100px]"
+                    >
+                        <h1 class="!mb-3 lg:!mb-4">Herzlich Willkommen im Team acme!</h1>
+                        <p class="intro">Lerne andere Menschen mit acme und Angehörige kennen, tausche dich aus und informiere dich rund um das Thema „acme”.</p>
+                    </div>
+                    <div class="mb-4">
+                        <div role="alert" class="relative my-5 bg-acmeLiga-primary-lightGrey">
+                            <div class="absolute right-0 top-0 flex -translate-y-1/2 translate-x-1/2 transform items-center">
+                                <button data-no-hover="true" type="button" class="btn border-0 focus:outline-none focus:border-0 border-0 p-0" data-rac="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" class="h-7 w-7">
+                                        <circle cx="14" cy="14" r="14" fill="#333"></circle>
+                                        <path fill="#fff" d="M20 9.209 18.791 8 14 12.791 9.209 8 8 9.209 12.791 14 8 18.791 9.209 20 14 15.209 18.791 20 20 18.791 15.209 14z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <img src="Sample-Image.png?v=1" alt="Announcement" class="-mr-2 mb-4 h-[200px] w-full object-cover lg:-mr-4 lg:h-[300px]" />
+                            <div class="flex flex-col gap-4 px-4 py-2 lg:px-7 lg:py-5">
+                                <h2 class="!mb-2 font-bold lg:!mb-4">Ankündigung der acme-Liga</h2>
+                                <span class="pb-2 text-base font-bold md:text-lg">
+                                    <span class="not-prose"><p>Test-Ankündigung im Homebereich: In den nächsten Tagen wird es sommerlich!</p></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex flex-col gap-3 lg:hidden">
+                        <button>
+                            <span class="flex items-center gap-2.5 pr-2 text-acmeLiga-primary-darkGreen no-underline">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.109863 12.9199L1.28986 14.0999L7.88986 7.4999L1.28986 0.899902L0.109863 2.0799L5.52986 7.4999L0.109863 12.9199Z" fill="#018F2C"></path>
+                                </svg>
+                                Neuigkeiten aus den Gruppen
+                            </span>
+                        </button>
+                        <button>
+                            <span class="flex items-center gap-2.5 pr-2 text-acmeLiga-primary-darkGreen no-underline">
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.109863 12.9199L1.28986 14.0999L7.88986 7.4999L1.28986 0.899902L0.109863 2.0799L5.52986 7.4999L0.109863 12.9199Z" fill="#018F2C"></path>
+                                </svg>
+                                Kontaktanfragen und Kontaktvorschläge
+                            </span>
+                        </button>
+                        <button>
+                            <span class="flex items-start gap-2.5 text-left text-acmeLiga-primary-darkGreen no-underline">
+                                <svg class="mt-2" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.109863 12.9199L1.28986 14.0999L7.88986 7.4999L1.28986 0.899902L0.109863 2.0799L5.52986 7.4999L0.109863 12.9199Z" fill="#018F2C"></path>
+                                </svg>
+                                Veranstaltungen der Landes- und Mitgliedsverbände
+                            </span>
+                        </button>
+                    </div>
+                    <div
+                        role="alert"
+                        class="relative p-4 lg:py-3.5 lg:px-7 my-5 bg-acmeLiga-secondary-lightTurquoise text-acmeLiga-secondary-turquoise dark:bg-acmeLiga-highContrast-lightTurquoise-bg dark:text-acmeLiga-highContrast-lightTurquoise-text"
+                    >
+                        <div class="absolute right-0 top-0 flex -translate-y-1/2 translate-x-1/2 transform items-center">
+                            <button data-no-hover="true" type="button" class="btn border-0 focus:outline-none focus:border-0 border-0 p-0" data-rac="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" class="h-7 w-7 dark:text-acmeLiga-highContrast-darkGrey-text">
+                                    <circle cx="14" cy="14" r="14" fill="#333"></circle>
+                                    <path fill="#fff" d="M20 9.209 18.791 8 14 12.791 9.209 8 8 9.209 12.791 14 8 18.791 9.209 20 14 15.209 18.791 20 20 18.791 15.209 14z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <span class="text-base font-bold md:text-lg">
+                            <span>Wenn du deine </span>
+                            <a class="text-base font-bold md:text-lg text-acmeLiga-secondary-turquoise hover:text-blue-800 dark:text-acmeLiga-highContrast-turquoise-text dark:hover:text-acmeLiga-darkGrey" href="/app/profile">
+                                Profilangaben
+                            </a>
+                            <span> vervollständigst, können wir dir individuelle Vorschläge für Gruppen und Kontakte machen und du kannst dich besser mit anderen Personen vernetzen.</span>
+                        </span>
+                    </div>
+                    <h2 class="!mb-4 lg:!mb-10">Neuigkeiten aus den Gruppen</h2>
+                    <div>
+                        <nav class="bg-white">
+                            <ul class="relative !-mx-1 !mt-0 mb-8 flex w-full snap-x snap-proximity list-none gap-x-8 overflow-x-auto !p-1 text-base md:gap-x-10 lg:mb-10 lg:gap-x-20 lg:text-xl">
+                                <li class="!m-0 flex-shrink-0 snap-start !p-0">
+                                    <a
+                                        aria-current="page"
+                                        class="block outline-none [&amp;.active]:text-acmeLiga-primary-darkGrey text-acmeLiga-secondary-darkGrey before:-translate-x-full pb-3 lg:pb-4 block [&amp;.active]:before:!h-0.5 [&amp;.active]:before:dark:!bg-acmeLiga-primary-darkGrey [&amp;.active]:before:!bg-acmeLiga-primary-darkGreen [&amp;.active]:before:!translate-x-0 [&amp;.active]:font-bold active"
+                                        href="/app/home/invitation"
+                                    >
+                                        <div class="flex flex-row gap-x-1 lg:gap-x-4">
+                                            <span>Gruppeneinladungen</span>
+                                            <div
+                                                class="flex items-center justify-center self-center rounded-full text-white text-sm size-6 lg:!size-7 bg-acmeLiga-primary-darkGreen text-white dark:bg-acmeLiga-highContrast-darkGrey-bg dark:text-acmeLiga-highContrast-darkGrey-text"
+                                            >
+                                                1
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="!m-0 flex-shrink-0 snap-start !p-0">
+                                    <a
+                                        class="block outline-none [&amp;.active]:text-acmeLiga-primary-darkGrey text-acmeLiga-secondary-darkGrey before:-translate-x-full pb-3 lg:pb-4 block [&amp;.active]:before:!h-0.5 [&amp;.active]:before:dark:!bg-acmeLiga-primary-darkGrey [&amp;.active]:before:!bg-acmeLiga-primary-darkGreen [&amp;.active]:before:!translate-x-0 [&amp;.active]:font-bold"
+                                        href="/app/home/open"
+                                    >
+                                        <div class="flex flex-row gap-x-1 lg:gap-x-4"><span>Offene Gruppen</span></div>
+                                    </a>
+                                </li>
+                                <li class="!m-0 flex-shrink-0 snap-start !p-0">
+                                    <a
+                                        class="block outline-none [&amp;.active]:text-acmeLiga-primary-darkGrey text-acmeLiga-secondary-darkGrey before:-translate-x-full pb-3 lg:pb-4 block [&amp;.active]:before:!h-0.5 [&amp;.active]:before:dark:!bg-acmeLiga-primary-darkGrey [&amp;.active]:before:!bg-acmeLiga-primary-darkGreen [&amp;.active]:before:!translate-x-0 [&amp;.active]:font-bold"
+                                        href="/app/home/suggestions"
+                                    >
+                                        <div class="flex flex-row gap-x-1 lg:gap-x-4"><span>Gruppenvorschläge</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mb-14 xl:mb-28">
+                            <div>
+                                <div class="mb-6">
+                                    <div>
+                                        <div
+                                            class="cursor-pointer focus-classes relative flex flex-wrap justify-between border-2 hover:shadow-hoverCard border-acmeLiga-primary-lightGrey dark:border-acmeLiga-highContrast-black-bg border-acmeLiga-primary-lightGrey border-b-acmeLiga-primary-lightGrey border-t-acmeLiga-primary-lightGrey p-5 text-acmeLiga-primary-darkGrey before:content-[none] dark:border-b-acmeLiga-highContrast-black-bg dark:border-r-acmeLiga-highContrast-black-bg dark:border-t-acmeLiga-highContrast-black-bg md:flex-nowrap md:justify-normal md:gap-y-4 md:py-10 lg:py-12 lg:pl-7 lg:pr-10"
+                                        >
+                                            <div class="overflow-wrap-anywhere order-1 basis-full hyphens-auto break-words md:order-2 md:flex-1 md:basis-[unset] md:pr-10 xl:pr-12">
+                                                <h4 class="!mb-5 !mt-0 font-bold lg:!mb-3">Gruppeneinladung</h4>
+                                                <div class="hidden md:block">
+                                                    <div class="flex flex-row gap-2">
+                                                        <div class="mb-5 flex flex-row flex-wrap gap-3">
+                                                            <div class="inline-flex h-5 items-center justify-center overflow-hidden bg-acmeLiga-primary-pastelGreen px-2 py-2 dark:bg-acmeLiga-highContrast-pastelGreen-bg">
+                                                                <span class="max-w-xs truncate text-sm text-acmeLiga-primary-darkGreen dark:text-acmeLiga-highContrast-pastelGreen-text">Entzündlich-acmetische Erkrankungen</span>
+                                                            </div>
+                                                            <div class="inline-flex h-5 items-center justify-center overflow-hidden bg-acmeLiga-primary-pastelGreen px-2 py-2 dark:bg-acmeLiga-highContrast-pastelGreen-bg">
+                                                                <span class="max-w-xs truncate text-sm text-acmeLiga-primary-darkGreen dark:text-acmeLiga-highContrast-pastelGreen-text">Angebote der Berliner acme-Liga</span>
+                                                            </div>
+                                                            <div class="inline-flex h-5 items-center justify-center overflow-hidden bg-acmeLiga-primary-pastelGreen px-2 py-2 dark:bg-acmeLiga-highContrast-pastelGreen-bg">
+                                                                <span class="max-w-xs truncate text-sm text-acmeLiga-primary-darkGreen dark:text-acmeLiga-highContrast-pastelGreen-text">Bremen</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="!mb-0">test</p>
+                                                </div>
+                                            </div>
+                                            <div class="order-3 flex min-w-[200px] flex-col gap-4 md:order-4">
+                                                <div>
+                                                    <div class="flex items-center gap-5 text-acmeLiga-primary-darkGrey no-focus-ring__input">
+                                                        <div class="relative flex items-center justify-center overflow-hidden rounded-full bg-acmeLiga-primary-lightGrey h-14 w-14 cursor-pointer hover:underline">
+                                                            <img src="Sample-Image.png?v=1-0" alt="test_2000" class="object-cover h-14 w-14" loading="lazy" />
+                                                        </div>
+                                                        <div class="not-prose flex-col items-center">
+                                                            <div class="flex flex-row">
+                                                                <span class="text-xl flex items-center cursor-pointer hover:underline">test_2000</span>
+                                                                <span aria-hidden="true">
+                                                                    <svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        width="24"
+                                                                        height="24"
+                                                                        fill="none"
+                                                                        class="ml-1 h-6 w-6 object-contain"
+                                                                        data-tooltip-id="verified-tooltip"
+                                                                        data-tooltip-content="Mitglied der Berliner acme-Liga"
+                                                                    >
+                                                                        <path
+                                                                            fill="#018F2C"
+                                                                            fill-rule="evenodd"
+                                                                            d="M12 4a7.49 7.49 0 0 1 7.35 6.04c2.6.18 4.65 2.32 4.65 4.96 0 2.76-2.24 5-5 5H6c-3.31 0-6-2.69-6-6 0-3.09 2.34-5.64 5.35-5.96A7.5 7.5 0 0 1 12 4M9.657 15.823c.11.118.254.177.398.177a.54.54 0 0 0 .397-.177l5.383-5.789a.64.64 0 0 0 0-.856.534.534 0 0 0-.795 0l-4.985 5.36-2.095-2.252a.535.535 0 0 0-.796 0 .64.64 0 0 0 .001.857z"
+                                                                            clip-rule="evenodd"
+                                                                        ></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="text-pretty text-left lg:font-bold">
+                                                    hat dich zur Gruppe <span class="overflow-wrap-anywhere hyphens-auto break-words text-acmeLiga-primary-darkGreen">testgeuppe 12345 </span>eingeladen
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <button type="button" aria-expanded="false" id="react-aria8134122783-:r10:" class="hidden" data-rac="">Gruppe bearbeiten</button>
+                                        <button type="button" aria-expanded="false" id="react-aria8134122783-:r12:" class="hidden" data-rac="">Gruppe löschen</button>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <span class="[&amp;>a]:btn [&amp;>a]:btn-primary-outline" data-rac="" tabindex="0" role="link"><a data-no-hover="true" href="/app/search/groups">Weitere Gruppen finden</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="-mx-4 mb-14 bg-acmeLiga-primary-lightGrey px-4 py-6 md:-mx-8 md:px-8 lg:-ml-8 lg:pb-10 lg:pl-8 lg:pt-14 xl:lg:-mr-[100px] xl:-ml-[72px] xl:mb-28 xl:pl-[72px] xl:pr-[100px]">
+                        <h2 class="!mb-4 lg:!mb-10">Kontaktanfragen und Kontaktvorschläge</h2>
+                        <nav class="z-10 bg-acmeLiga-primary-lightGrey">
+                            <ul class="!-mx-1 !mb-5 !mt-0 flex w-full list-none gap-x-8 overflow-x-auto !p-1 text-base md:gap-x-10 lg:!mb-10 lg:gap-x-20 lg:text-xl">
+                                <li class="!m-0 flex-shrink-0 !p-0">
+                                    <button
+                                        data-no-hover="true"
+                                        type="button"
+                                        class="btn border-0 focus:outline-none focus:border-0 relative outline-none overflow-hidden border-0 p-0 pb-3 lg:pb-4 focus:border-0 !focus:outline-none hover-classes no-focus-ring__input before:h-0.5 font-bold text-acmeLiga-primary-darkGrey before:translate-x-0 before:bg-acmeLiga-primary-darkGreen before:dark:bg-acmeLiga-primary-darkGrey"
+                                        data-rac=""
+                                    >
+                                        <div class="flex flex-row gap-x-1 lg:gap-x-4">Neue Anfragen</div>
+                                    </button>
+                                </li>
+                                <li class="!m-0 flex-shrink-0 !p-0">
+                                    <button
+                                        data-no-hover="true"
+                                        type="button"
+                                        class="btn border-0 focus:outline-none focus:border-0 relative outline-none overflow-hidden border-0 p-0 pb-3 lg:pb-4 focus:border-0 !focus:outline-none hover-classes no-focus-ring__input before:h-0.5 text-acmeLiga-secondary-darkGrey"
+                                        data-rac=""
+                                    >
+                                        <div class="flex flex-row gap-x-1 lg:gap-x-4">Kontaktvorschläge</div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <div class="!mb-8 text-base lg:!mb-10 lg:text-lg">Wenn du die Kontaktanfrage einer Person annimmst, erscheint ihr Profil unter “Kontakte” und du kannst mit ihr chatten.</div>
+                            <div><p class="text-lg font-bold">Keine Kontaktanfragen vorhanden</p></div>
+                            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:gap-10 2xl:grid-cols-3 2xl:gap-[62px]"></div>
+                        </div>
+                    </div>
+                    <div class="mb-14 grid grid-cols-1 gap-5 lg:grid-cols-2 xl:mb-28">
+                        <div class="flex flex-col justify-start break-words">
+                            <h2>Die Veranstaltungen der Landes- und Mitgliedsverbände</h2>
+                            <div class="intro">
+                                <p>
+                                    Unsere Landes- und Mitgliedsverbände bieten Informationen, Beratung und Veranstaltungen für acme-Betroffene. In Selbsthilfegruppen, Arbeitsgemeinschaften, Elternkreisen und Treffen für junge Menschen mit
+                                    acme tauschen Betroffene Erfahrungen aus. Bewegungsangebote wie das Funktionstraining und "aktiv-hoch-r“ helfen Menschen mit acme, ihre Beschwerden zu lindern.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-start break-words">
+                            <div class="mb-auto">
+                                <div class="mb-5 block text-lg md:h4 md:mb-6 lg:text-2xl">Bitte wähle einen Verband, um zu den Veranstaltungen zu gelangen.</div>
+                                <div>
+                                    <div class="relative mb-5 w-full md:mb-9" data-rac="">
+                                        <span class="sr-only" id="react-aria8134122783-:rq:">Landes- oder Mitgliedsverband wählen</span>
+                                        <button
+                                            id="react-aria8134122783-:rp:"
+                                            type="button"
+                                            aria-label="Mitgliedsverbände"
+                                            aria-labelledby="react-aria8134122783-:ru: react-aria8134122783-:rp: react-aria8134122783-:rq:"
+                                            aria-haspopup="listbox"
+                                            aria-expanded="false"
+                                            class="custom-select"
+                                            data-rac=""
+                                        >
+                                            <span id="react-aria8134122783-:ru:" class="react-aria-SelectValue" data-rac="" data-placeholder="true">Landes- oder Mitgliedsverband wählen</span>
+                                            <span aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                                                    <path d="M15.885 -9.53674e-06L9 6.86999L2.115 -9.53674e-06L0 2.11499L9 11.115L18 2.11499L15.885 -9.53674e-06Z" fill="#ABABAB"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div
+                                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+                                        aria-hidden="true"
+                                        data-react-aria-prevent-focus="true"
+                                        data-a11y-ignore="aria-hidden-focus"
+                                        data-testid="hidden-select-container"
+                                    >
+                                        <input type="text" tabindex="0" style="font-size: 16px;" />
+                                        <label>
+                                            <select tabindex="-1" title="">
+                                                <option></option>
+                                                <option value="association-1">acme-Liga Baden-Württemberg e.V.</option>
+                                                <option value="association-3">Berliner acme-Liga Berlin e.V.</option>
+                                                <option value="association-6">Berliner acme-Liga Nordrhein-Westfalen e.V.</option>
+                                                <option value="association-7">Sklerodermie Selbsthilfe e.V.</option>
+                                                <option value="association-9">Berliner acme-Liga Landesverband Bayern e.V.</option>
+                                                <option value="association-10">Berliner acme-Liga Landesverband Brandenburg e.V.</option>
+                                                <option value="association-11">acme-Liga Bremen e.V.</option>
+                                                <option value="association-12">Berliner acme-Liga Landesverband Hamburg e.V.</option>
+                                                <option value="association-13">acme-Liga Hessen e.V.</option>
+                                                <option value="association-14">Berliner acme-Liga Mecklenburg-Vorpommern e.V.</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer>
+            <div class="container max-w-[1720px] flex justify-center md:justify-end back-to-top" x-data="scrollTop">
+                <button
+                    @click.prevent="scrollTop"
+                    type="button"
+                    class="bg-white py-3.5 px-5 shadow-[0_0_15px_rgba(0,0,0,0.15)] flex items-center justify-center dark:text-acmeLiga-primary-darkGrey text-acmeLiga-primary-darkGreen -mb-1 md:mb-0 3xl:transform 3xl:translate-x-[calc(100%_+_14px)]"
+                >
+                    <span class="material-icons-outlined !text-[18px]">[-]</span>
+                </button>
+            </div>
+            <div class="bg-acmeLiga-primary-darkGreen dark:bg-acmeLiga-primary-darkGrey text-white">
+                <div class="container max-w-[1720px] py-5 md:py-2">
+                    <div class="flex md:gap-x-[60px] md:justify-end">
+                        <div x-data="bigFontSize">
+                            <button @click.prevent="toggle" type="button" class="hidden md:flex items-center gap-1 md:gap-5">
+                                <span class="rounded-full bg-white flex items-center justify-center w-10 h-10 text-acmeLiga-primary-darkGrey font-bold">
+                                    <span class="flex items-baseline justify-center">
+                                        <span class="text-base leading-loose">A</span>
+                                        <span class="text-2xl leading-loose">A</span>
+                                    </span>
+                                </span>
+                                <span class="underline">Schriftgröße</span>
+                            </button>
+                        </div>
+                        <div x-data="highContrast">
+                            <button @click.prevent="toggle" type="button" class="flex items-center gap-1 md:gap-5">
+                                <span class="rounded-full bg-white flex items-center justify-center w-10 h-10 text-acmeLiga-primary-darkGrey font-bold">
+                                    <span class="material-icons-outlined">[-]</span>
+                                </span>
+                                <span class="underline">Kontrast</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-acmeLiga-secondary-lightGrey py-5 lg:pt-12 lg:pb-7">
+                <div class="container max-w-[1720px] not-prose">
+                    <h4 class="text-base lg:text-xl font-bold leading-[26px] mb-2 lg:mb-6">Die Berliner acme-Liga</h4>
+                    <div class="flex flex-wrap gap-x-20 gap-y-5 md:gap-x-14 xl:gap-x-9 2xl:gap-x-20">
+                        <div class="max-w-sm md:max-w-none w-full xl:max-w-sm">
+                            <div class="mb-4 lg:mb-4 text-sm leading-6 lg:text-base lg:leading-7">
+                                <p>Die <a target="_blank" href="https://www.acme-liga.de/" title="https://www.acme-liga.de/">Berliner acme-Liga</a> ist die größte Berliner Selbsthilfeorganisation im Gesundheitsbereich.</p>
+                            </div>
+                            <p class="text-acmeLiga-primary-darkGreen dark:text-acmeLiga-primary-darkGrey text-sm leading-6 lg:text-lg lg:leading-8">
+                                <a href="https://www.acme-liga.de/ueber-uns/mitgliedschaft" target="_blank" class="inline-flex items-center before:!bg-acmeLiga-primary-darkGreen dark:before:!bg-acmeLiga-primary-darkGrey">
+                                    <span class="material-icons-outlined mr-1 !text-sm lg:!text-lg !leading-none lg:!leading-none">[-]</span>
+                                    Jetzt Mitglied werden
+                                </a>
+                            </p>
+                        </div>
+                        <div class="text-sm leading-6 lg:text-base flex gap-3 items-center md:block">
+                            <h5 class="leading-7"><strong>Kostenfreie Infohotline</strong></h5>
+                            <div class="flex gap-2 md:gap-3 items-center">
+                                <span class="material-icons-outlined !text-base !leading-none lg:!leading-none">[-]</span>
+                                <a class="underline-hover" href="tel:+498001234567">
+                                    +49(0)800 - 123 45 67
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-sm leading-6 lg:text-base">
+                            <h5 class="leading-7"><strong>Berliner acme-Liga Bundesverband e.V.</strong></h5>
+                            <address class="not-italic flex gap-3 items-start">
+                                <span class="material-icons-outlined !text-2xl lg:!text-base !leading-none lg:!leading-none mt-1.5">[-]</span>
+                                <div class="leading-7">
+                                    <p>Bahnhofstr. 7</p>
+                                    <p>
+                                        12345 Berlin
+                                    </p>
+                                </div>
+                            </address>
+                        </div>
+                        <div class="text-sm leading-6 lg:text-base w-full sm:w-auto">
+                            <div class="flex gap-3 items-center">
+                                <span class="material-icons-outlined !text-xl lg:!text-base !leading-none lg:!leading-none">[-]</span>
+                                <a class="underline-hover" href="tel:+49228766060">+49(0)123 - 45 67 89</a>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <span class="material-icons-outlined !text-xl lg:!text-base !leading-none lg:!leading-none">[-]</span>
+                                <a class="underline-hover" href="#" onmouseover="this.href = 'mailto:' + 'bv' + '@' + 'acme-liga.de'" ontouchstart="this.href = 'mailto:' + 'bv' + '@' + 'acme-liga.de'">
+                                    bv(at)acme-liga.de
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-sm leading-6 lg:text-base mt-3 sm:mt-0">
+                            <ul>
+                                <li class="overflow-hidden">
+                                    <a class="underline-hover" href="https://www.verband-acme.de/contact/">
+                                        Feedback &amp; Kontakt
+                                    </a>
+                                </li>
+                                <li class="overflow-hidden">
+                                    <a class="underline-hover" href="https://www.verband-acme.de/hilfe-und-faq">
+                                        Hilfe &amp; FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-px -mx-4 md:mx-0 bg-acmeLiga-primary-darkGreen dark:bg-acmeLiga-primary-darkGrey my-5 lg:my-7"></div>
+                    <div class="flex flex-col xl:flex-row xl:justify-between">
+                        <div class="order-2 xl:order-1 text-sm md:text-base leading-6">
+                            © 2024 Berliner acme-Liga Bundesverband e.V.
+                        </div>
+                        <div class="order-1 xl:order-2">
+                            <ul class="flex flex-wrap gap-5 lg:gap-x-[52px] max-xl:mb-5 text-sm md:text-base">
+                                <li class="overflow-hidden">
+                                    <a href="https://www.verband-acme.de/impressum" class="underline-hover text-nowrap">
+                                        Impressum
+                                    </a>
+                                </li>
+                                <li class="overflow-hidden">
+                                    <a href="https://www.verband-acme.de/datenschutz" class="underline-hover text-nowrap">
+                                        Datenschutz
+                                    </a>
+                                </li>
+                                <li class="overflow-hidden">
+                                    <a href="https://www.verband-acme.de/nutzungsbedingungen" class="underline-hover text-nowrap">
+                                        Nutzungsbedingungen
+                                    </a>
+                                </li>
+                                <li class="overflow-hidden">
+                                    <a href="https://www.verband-acme.de/netiquette" class="underline-hover text-nowrap">
+                                        Netiquette
+                                    </a>
+                                </li>
+                                <li class="overflow-hidden">
+                                    <a href="https://www.verband-acme.de/erklaerung-zur-barrierefreiheit" class="underline-hover text-nowrap">
+                                        Erklärung zur Barrierefreiheit
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            window.formKey = "46.oX07XdpvIDupUDEjahQD18vdgSUpRb8fr6J4U5xBOiU.-EtJMI0jQwmcHHJBD0ZIpKC6tE5jFfhS6Oo2O_csCF-QDnZttyB2cYQScA";
+            window.maxPostingEditingDurationInMinutes = 60;
+            window.maxCommentEditingDurationInMinutes = 60;
+            window.tfaTokenValidityMinutes = 60;
+            window.mercurePublicUrl = "https://www.verband-acme.de/.well-known/mercure";
+            window.emojiDatasourceUrl = "/build/website/emoji-datasource-apple/";
+
+            // Modal links window.modalLinks = [{"title":"Impressum","url":"\/impressum"},{"title":"Datenschutz","url":"\/datenschutz"}];
+        </script>
+        <script type="module">
+            const registerServiceWorker = async () => {
+                if ("serviceWorker" in navigator) {
+                    try {
+                        await navigator.serviceWorker.register("/service-worker.js");
+                    } catch (error) {
+                        console.error(`Registration failed with ${error}`);
+                    }
+                }
+            };
+
+            await registerServiceWorker();
+        </script>
+    </body>
+</html>
