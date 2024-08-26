@@ -2291,14 +2291,6 @@ form select:not([size]):is(.dark *) {
         padding: 1.25rem 1rem;
     }
 }
-form .select,
-form select:not([size]) {
-    background-image: url(/build/website/assets/arrow-down-disabled.7c33f6fd.svg);
-}
-form .select.on-selected,
-form select:not([size]).on-selected {
-    background-image: url(/build/website/assets/arrow-down.dd10512a.svg);
-}
 form .notice {
     display: flex;
     font-size: calc(var(--r-font-size) * 0.875);
@@ -2409,7 +2401,6 @@ form label.required:after {
     --tw-ring-offset-color: transparent;
 }
 .symbol-registration-people {
-    background-image: url(/build/website/assets/registration-people.57a49646.svg);
     height: 134px;
     margin-bottom: 1.25rem;
     margin-left: auto;
@@ -2658,10 +2649,6 @@ hr.secondary_dark_grey {
 @media (min-width: 1024px) {
     .pwa-nav ul li a:after,
     .pwa-nav ul li button:after {
-        background-image: url(/build/website/assets/navigation.dc268578.svg);
-        background-position: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 100%;
         opacity: 0;
         position: absolute;
@@ -13875,9 +13862,6 @@ a:not(.btn):not([data-no-hover]).underline-hover:hover:before {
 }
 .bg-opacity-50 {
     --tw-bg-opacity: 0.5;
-}
-.bg-\[url\(\'\.\.\/images\/symbols\/registration-people\.svg\'\)\] {
-    background-image: url(/build/website/assets/registration-people.57a49646.svg);
 }
 .bg-gradient-to-br {
     background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
@@ -26886,21 +26870,6 @@ a:not(.btn):not([data-no-hover]).underline-hover:hover:before {
 .bg-transaprent {
     background-color: transparent;
 }
-.icon-padlock {
-    background-image: url(/build/website/assets/padlock.e2086c0c.svg);
-}
-.icon-speech-bubbles {
-    background-image: url(/build/website/assets/speech-bubbles.e79eed4d.svg);
-}
-.icon-cloud-check {
-    background-image: url(/build/website/assets/cloud-check.23d5d1e3.svg);
-}
-.icon-cloud-download {
-    background-image: url(/build/website/assets/cloud-download.eb3bdadc.svg);
-}
-.icon-close {
-    background-image: url(/build/website/assets/close-icon.32b6d30d.svg);
-}
 @keyframes link-underline {
     0% {
         transform: translateX(-100%);
@@ -30123,9 +30092,6 @@ a:not(.btn):not([data-no-hover]).underline-hover:hover:before {
     }
     .lg\:bg-transparent {
         background-color: transparent;
-    }
-    .lg\:bg-\[url\(\'\.\.\/images\/icons\/navigation\/navigation\.svg\'\)\] {
-        background-image: url(/build/website/assets/navigation.dc268578.svg);
     }
     .lg\:bg-\[length\:48\%\] {
         background-size: 48%;
